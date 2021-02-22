@@ -1,0 +1,158 @@
+.team {
+	background-color: #566896;
+	border-radius: 5px;
+	padding-left: 8%;
+}
+
+.team:hover {
+	cursor: pointer;
+}
+
+.dashboard:hover,
+.people:hover,
+.calendar:hover {
+	background-color: #f0f6ff;
+	border-radius: 5px;
+	color: #28293D;
+	cursor: pointer;
+}
+
+.righttop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 12%;
+}
+
+.search {
+	display: flex;
+	color: lightgray;
+	border: 1px solid lightgray;
+	padding: 1% 1%;
+	border-radius: 5px;
+	width: 180px;
+	margin: 6% 3% 6% 0%;
+}
+
+.search input {
+	border: none;
+	background-color: #f4f9f9;
+	outline: none;
+	margin-left: 8%;
+	width: 150px;
+	font-size: 120%;
+}
+
+#search {
+	padding-top: 1%;
+	padding-left: 1%;
+}
+
+.righttop p {
+	font-size: 300%;
+	font-weight: bold;
+	margin-left: 3%;
+	width: 50%;
+}
+
+.righttop a {
+	font-size: 100%;
+	font-weight: bold;
+	width: 50%;
+	color: black;
+}
+
+.search:hover {
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.rightinfo {
+	height: auto;
+	background-color: white;
+	flex-direction: column;
+	border-radius: 10px;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	grid-row-gap: 50px;
+	padding: 3% 0% 7% 0%;
+	margin: 0% 1.5%;
+	margin-top: 1%;
+}
+
+.rowleader {
+	display: flex;
+	justify-content: center;
+}
+
+.rowmemberCenter {
+	display: flex;
+	justify-content: center;
+}
+
+.rowmember {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 100px;
+	grid-row-gap: 50px;
+}
+
+.person1 {
+	width: 180px;
+	height: 220px;
+	border-radius: 20px;
+	border: 3px solid black;
+	text-align: center;
+}
+
+.profile1 {
+	font-size: 800%;
+	padding: 0%;
+	padding-top: 3%;
+}
+
+.name1 {
+	padding-top: 8%;
+	font-size: 180%;
+}
+
+.role1 {
+	padding-top: 5%;
+	color: rgb(202, 202, 202);
+	font-size: 120%;
+}
+
+.position1 {
+	margin-top: 28px;
+	color: gray;
+	font-size: 12px;
+	background-color: lightblue;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom-left-radius: 17px;
+	border-bottom-right-radius: 17px;
+	border-top: 3px solid black;
+}
+
+.position1:hover {
+	background-color: lightgray;
+	color: black;
+}
+
+.righttop span {
+	font-size: 45%;
+	font-weight: lighter;
+	margin-left: 2%;
+}
+
+.position2 {
+	margin-top: 33px;
+	color: gray;
+	font-size: 12px;
+	background-color: lightblue;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom-left-radius: 17px;
+	border-bottom-right-radius: 17px;
+	border-top: 3px solid black
+}

@@ -1,0 +1,124 @@
+.team {
+	background-color: #566896;
+	border-radius: 5px;
+	padding-left: 8%;
+}
+
+.team:hover {
+	cursor: pointer;
+}
+
+.dashboard:hover,
+.people:hover,
+.calendar:hover {
+	background-color: #f0f6ff;
+	border-radius: 5px;
+	color: #28293D;
+	cursor: pointer;
+}
+
+.righttop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 12%;
+}
+
+.search {
+	display: flex;
+	color: lightgray;
+	border: 1px solid lightgray;
+	padding: 1% 1%;
+	border-radius: 5px;
+	width: 180px;
+	margin: 6% 3% 6% 0%;
+}
+
+.search input {
+	border: none;
+	background-color: #f4f9f9;
+	outline: none;
+	margin-left: 8%;
+	width: 150px;
+	font-size: 120%;
+}
+
+#search {
+	padding-top: 1%;
+	padding-left: 1%;
+}
+
+.righttop p {
+	font-size: 300%;
+	font-weight: bold;
+	margin-left: 3%;
+	width: 50%;
+}
+
+.search:hover {
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.rightinfo {
+	height: auto;
+	background-color: #f4f9f9;
+	display: grid;
+	grid-template: auto;
+	background-color: white;
+	padding: 3% 0% 5% 0%;
+	margin: 0% 1.5%;
+	margin-top: 1%;
+	border-radius: 10px;
+}
+
+.rightdata {
+	display: flex;
+	justify-content: center;
+}
+
+.rightTeam {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 100px;
+	grid-row-gap: 50px;
+}
+
+.rightinfo a {
+	text-decoration: none;
+	color: black;
+}
+
+.team1 {
+	width: 180px;
+	height: 220px;
+	border-radius: 20px;
+	border: 3px solid blue;
+	text-align: center;
+}
+
+.teamLogo {
+	font-size: 900%;
+	padding: 0%;
+	padding-top: 10%;
+}
+
+.teamName {
+	padding: 0% 3%;
+	padding-top: 10%;
+	font-size: 18px;
+}
+
+.numberOfMember {
+	padding-top: 5%;
+	color: gray;
+	font-size: 120%;
+}
+
+.team2 {
+	width: 15%;
+	height: 100%;
+	border-radius: 20px;
+	border: 3px solid yellow;
+	text-align: center;
+}

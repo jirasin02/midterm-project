@@ -1,0 +1,93 @@
+.people {
+	background-color: #566896;
+	border-radius: 5px;
+	padding-left: 8%;
+}
+
+.people:hover {
+	cursor: pointer;
+}
+
+.dashboard:hover,
+.calendar:hover,
+.team:hover {
+	background-color: #f0f6ff;
+	border-radius: 5px;
+	color: #28293D;
+	cursor: pointer;
+}
+
+.righttop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 12%;
+}
+
+.search {
+	display: flex;
+	color: lightgray;
+	border: 1px solid lightgray;
+	padding: 1% 1%;
+	border-radius: 5px;
+	width: 180px;
+	margin: 6% 3% 6% 0%;
+}
+
+.search input {
+	border: none;
+	background-color: #f4f9f9;
+	outline: none;
+	margin-left: 8%;
+	width: 150px;
+	font-size: 120%;
+}
+
+#search {
+	padding-top: 1%;
+	padding-left: 1%;
+}
+
+.righttop p {
+	font-size: 300%;
+	font-weight: bold;
+	margin-left: 3%;
+}
+
+.search:hover {
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.rightinfo {
+	background: #FFF;
+	margin: 10px 20px 0px 20px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.dataTable {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #ddd;
+	font-size: 18px;
+}
+
+.header {
+	background-color: lightgray;
+}
+
+.dataTable th,
+.dataTable td {
+	text-align: left;
+	padding: 12px;
+}
+
+.dataTable tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.dataInfo:hover {
+	background-color: #EBEBEB;
+	cursor: pointer;
+}

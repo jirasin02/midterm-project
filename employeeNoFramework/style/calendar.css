@@ -1,0 +1,14 @@
+.calendar{
+        background-color: #566896;
+        border-radius: 5px;
+        padding-left: 8%;
+}
+.calendar:hover{
+        cursor: pointer;
+}
+.dashboard:hover, .people:hover, .team:hover{
+        background-color: #f0f6ff;
+        border-radius: 5px;
+        color: #28293D;
+        cursor: pointer;
+}
