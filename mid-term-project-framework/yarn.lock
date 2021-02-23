@@ -8122,6 +8122,11 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
+vue-cli-plugin-layouts@~1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/vue-cli-plugin-layouts/download/vue-cli-plugin-layouts-1.0.2.tgz#10c737db9ae63188fb21fc26740ac2af6a144c9c"
+  integrity sha1-EMc325rmMYj7IfwmdArCr2oUTJw=
+
 vue-cli-plugin-vuetify@~2.1.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/vue-cli-plugin-vuetify/download/vue-cli-plugin-vuetify-2.1.0.tgz?cache=0&sync_timestamp=1611735281312&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-cli-plugin-vuetify%2Fdownload%2Fvue-cli-plugin-vuetify-2.1.0.tgz#1261d5866bca8f5c256f1b13abad2568fbcd6bb2"
@@ -8142,6 +8147,11 @@ vue-eslint-parser@^7.0.0:
     espree "^6.2.1"
     esquery "^1.4.0"
     lodash "^4.17.15"
+
+vue-extend-layout@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.npm.taobao.org/vue-extend-layout/download/vue-extend-layout-2.0.6.tgz#f76e368343c0afd80b9f0e07b0be5b3f5013a416"
+  integrity sha1-9242g0PAr9gLnw4HsL5bP1ATpBY=
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"

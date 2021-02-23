@@ -3,7 +3,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+   name: "Dashboard",
+   components: {
+      //   Navbar: () => import("../components/Navbar"),
+   },
+};
 </script>
 
 <style>

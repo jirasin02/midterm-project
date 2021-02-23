@@ -1,18 +1,32 @@
 <template>
    <div class="main">
-      <div class="top d-flex flex-row ml-6 mt-1">
-         <v-icon> mdi-lightbulb-on </v-icon>
-         <p class="ml-3 mt-4">UNTITLED</p>
+      <v-carousel
+         :show-arrows="false"
+         hide-delimiters
+         cycle
+         class="background"
+         height="820"
+      >
+         <v-carousel-item
+            v-for="(item, i) in items"
+            :key="i"
+            :src="item.src"
+         ></v-carousel-item>
+      </v-carousel>
+      <div class="top d-flex flex-row ml-6">
+         <v-icon color="#023E8A"> mdi-lightbulb-on</v-icon>
+         <p class="ml-3 mt-5">UNTITLED</p>
       </div>
       <div class="bottom d-flex flex-column align-center">
-         <div class="signin d-flex flex-column align-center">
-            <p class="mb-12">Sign In</p>
+         <div class="signin d-flex flex-column align-center mt-6">
+            <p class="mt-12 mb-12">Sign In</p>
             <v-form ref="form" v-model="valid">
                <v-container class="d-flex flex-column align-center">
                   <div class="input mt-5">
                      <v-text-field
                         v-model="info.username"
                         :rules="usernameRules"
+                        prepend-inner-icon="mdi-account"
                         label="Username"
                         outlined
                         required
@@ -24,6 +38,7 @@
                         v-model="info.password"
                         :rules="passwordRules"
                         label="Password"
+                        prepend-inner-icon="mdi-lock"
                         outlined
                         required
                         type="password"
@@ -35,9 +50,9 @@
             <div class="incorrect mb-4" v-if="validate">
                username or password is incorrect
             </div>
-            <div class="forget align-self-end">Forget Password?</div>
+            <div class="forget align-self-end">Forgot Password?</div>
             <v-btn
-               color="#333B55"
+               color="#03045E"
                depressed
                large
                dark
@@ -63,7 +78,22 @@ export default {
          usernameRules: [(v) => !!v || "Username is required."],
          passwordRules: [(v) => !!v || "Password is required"],
          validate: false,
-         infoForCheck: { id: "1", username: "Lemoningz", password: "123" },
+         infoForCheck: { id: "1", username: "Sakura", password: "29102018" },
+         items: [
+            {
+               src: "background1.jpg",
+            },
+
+            {
+               src: "background2.webp",
+            },
+            {
+               src: "background3.jpg",
+            },
+            {
+               src: "background4.jpg",
+            },
+         ],
       };
    },
    methods: {
@@ -91,8 +121,11 @@ export default {
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.background {
+   position: absolute;
+   opacity: 0.05;
+}
 .main {
-   background-color: #f4f9f9;
 }
 .top {
    font-size: 24px;
@@ -102,13 +135,13 @@ export default {
 }
 .bottom {
    display: flex;
-   height: 90vh;
+   height: auto;
    justify-content: center;
 }
 .signin {
-   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    width: 40%;
-   height: 80%;
+   height: 75vh;
    border-radius: 10px;
 }
 .signin p {
@@ -124,7 +157,7 @@ export default {
    margin-left: auto;
 }
 .input {
-   width: 241%;
+   width: 200%;
    margin-top: 3%;
 }
 .incorrect {
