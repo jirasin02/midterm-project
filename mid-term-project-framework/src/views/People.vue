@@ -2,6 +2,7 @@
    <div class="mt-3 ml-3 mr-3">
       <v-card>
          <v-card-title>
+            <v-icon color="#02033c" class="mr-4"> mdi-account-multiple </v-icon>
             People
             <v-spacer></v-spacer>
             <v-spacer></v-spacer>
@@ -16,7 +17,7 @@
             <v-text-field
                prepend-icon="mdi-magnify"
                v-model="search"
-               label="Search"
+               placeholder="Search"
                hide-details
                clearable
             ></v-text-field>
@@ -28,26 +29,15 @@
             height="600"
             fixed-header
             :single-expand="singleExpand"
-            :expanded.sync="expanded"
             item-key="name"
             show-expand
          >
             <template v-slot:expanded-item="{ headers, item }">
-               <td :colspan="headers.length" class="pt-2 pb-2">
-                  <v-row>
-                     <v-col cols="12" md="2" class="mr-12">
-                        Contact: {{ item.contact }}
-                     </v-col>
-                     <v-col cols="12" md="3" class="ml-3">
-                        Address: {{ item.address }}
-                     </v-col>
-                     <v-col cols="12" md="3" class="ml-12">
-                        Experience: {{ item.experience }}
-                     </v-col>
-                  </v-row>
+               <td :colspan="headers.length">
+                  More info about {{ item.name }}
                </td>
-            </template></v-data-table
-         >
+            </template>
+         </v-data-table>
       </v-card>
    </div>
 </template>
@@ -66,7 +56,6 @@ export default {
                filterable: true,
                value: "id",
             },
-            { text: "", value: "pic" },
             { text: "Name", value: "name" },
             { text: "Position", value: "position" },
             { text: "Team", value: "team" },
